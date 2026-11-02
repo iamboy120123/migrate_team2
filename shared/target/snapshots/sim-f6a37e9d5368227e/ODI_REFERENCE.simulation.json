@@ -1,0 +1,9 @@
+{
+  "kind": "simulation-metadata-only",
+  "is_smart_export": false,
+  "logical_schema": "SIM_ORACLE_LOGICAL",
+  "context": "SIMULATION",
+  "environment": "OFFLINE",
+  "production_verified": false,
+  "note": "No actual ODI repository identifiers, topology, credentials or exported objects are present."
+}

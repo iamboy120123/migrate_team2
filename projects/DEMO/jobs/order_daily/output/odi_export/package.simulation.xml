@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MigrationSimulationPlan formatVersion="1" importableInODI="false" workflow="demo_order_daily" package="PKG_ORDER_DAILY" kitVersion="0.1.0" inputFingerprint="d479c3cea838ff2f38f4a04ebed11744fd729a547692a1fef713a30e7170942e"><Warning>OFFLINE SIMULATION. NOT AN ODI SMART EXPORT. DO NOT IMPORT.</Warning><Task id="T003" strategy="append" demoObjectId="192001"><Step order="1" sqlFile="output/dml/T003_01.sql">INSERT INTO ORDER_FACT (ORDER_ID, CUSTOMER_ID, AMOUNT)
+SELECT order_id AS ORDER_ID, customer_id AS CUSTOMER_ID, amount AS AMOUNT FROM raw_order WHERE amount &gt; 0</Step></Task></MigrationSimulationPlan>

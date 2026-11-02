@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+registry/
+STATUS.md
+STATUS.html
+shared/db.local.json
+projects/*/jobs/*/input/run_results/
+*.bak-*
+kit/dist/
+kit/*.egg-info/
+**/.dbx/
+projects/*/jobs/*/db_runs/
+tests/regression/*/baseline.zip

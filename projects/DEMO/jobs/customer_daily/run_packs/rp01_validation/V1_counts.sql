@@ -1,0 +1,4 @@
+-- Rehearsal only; never executed by this workspace.
+SELECT COUNT(*) AS ROW_COUNT FROM CUSTOMER_DIM
+
+SELECT COUNT(*) AS ROW_COUNT FROM ACTIVE_CUSTOMER

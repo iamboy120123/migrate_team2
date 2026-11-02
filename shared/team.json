@@ -1,0 +1,9 @@
+{
+  "github_mode": "manual",
+  "db_mode": "human",
+  "simulation_only": true,
+  "ids": {
+    "base": 90000,
+    "step": 1000
+  }
+}

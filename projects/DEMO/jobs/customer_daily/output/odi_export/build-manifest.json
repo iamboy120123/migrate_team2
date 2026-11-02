@@ -1,0 +1,33 @@
+{
+  "mode": "simulation",
+  "native_odi_smart_export": false,
+  "import_allowed": false,
+  "kit": {
+    "kit_version": "0.1.0",
+    "kit_sha256": "857d5c89baa0f5e40cb3054925353f35eb4678c4de32c90d4c55bea514b25050",
+    "target_snapshot": "sim-f6a37e9d5368227e",
+    "target_sha256": "f6a37e9d5368227e4521efe93320bf14e6479a2b3a1ff9bed4da7ba2753782ce"
+  },
+  "input_fingerprint": "fa233e5259693811bd61a909d923cd70b7217e7c2f1051ad22a947fde12cfb29",
+  "tasks": [
+    "T001",
+    "T002"
+  ],
+  "files": {
+    "output/sql/raw/T001.sql": "5a3d04d3b9f1f82825108fcb4e26e5b3e3aa03569a6d26bfdafb4e5a80f2a061",
+    "output/sql/converted/T001.sql": "1d7d72ec005f2a6dbfb168133454e4c2741f993159c46102b99313c3e26ab283",
+    "output/dml/T001_01.sql": "dbc5f6a93f900e1c8714d7ec65fa00a4ed33fdfab437cd806e2cd2ad452d2cd8",
+    "output/sql/raw/T002.sql": "fa310bdbe84b9088d8beff472a44b8ddcf912f008d5c75517551486ac9e89106",
+    "output/sql/converted/T002.sql": "bdbf5c2f5b81282523b95d0f2e750b2973578e330997910f4213c878c9c627e6",
+    "output/dml/T002_01.sql": "2bb46b16f99d240711481770ca2f45ca9dfee0b855f6fc4a83280b5c582798df",
+    "output/dml/T002_02.sql": "a6416d9ad4b566b16a35bb1d391799dd9c8258d73eb02f14d2a403d73e38106a",
+    "output/validation/fixture_comparison.json": "560972a44c30346c21150c16c3c5765615c54d144fb9e6ca9daa12d9a33593bf",
+    "output/validation/REPORT.md": "1d852c73323934380fbec2bf45eb2be64bd88887f812015ac37c09107c26756e",
+    "output/odi_export/package.simulation.xml": "18677a71d73065da4a9cb108a6496725006366b5e428ed11fa5a02a28b85f51a",
+    "output/odi_export/README.md": "5f18e534cb3e007bb34d97bf3557f2125c100e4532a32de6986f99fe010f7499",
+    "run_packs/rp01_validation/V1_counts.sql": "e1eddef6d4a9b793c13b6a4ee59cab92c679d21a09cea7583da8cdf3d730561a",
+    ".design/03_package_flow.md": "f307a08bfe8b1f1bca565227802bf26b872addbe1efcbd33006bea3575be460a",
+    "status/BUSINESS_RULES.md": "4005505859ef59072daa946ee79ceac00d753be404357feb766998484aefce4e",
+    "status/SQL_REVIEW.md": "428f4d22bd6257514a0287530e6937475068c5d1fc53944800066c82f42268de"
+  }
+}

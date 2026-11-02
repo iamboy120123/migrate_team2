@@ -1,0 +1,100 @@
+{
+  "mode": "simulation",
+  "checks": [
+    {
+      "task": "T001",
+      "strategy": "upsert",
+      "rows_selected": 2,
+      "selected_rows": [
+        [
+          1,
+          "ANA",
+          "TH"
+        ],
+        [
+          2,
+          "BO",
+          "UNKNOWN"
+        ]
+      ],
+      "after_first_run": [
+        [
+          1,
+          "ANA",
+          "TH"
+        ],
+        [
+          99,
+          "KEEP",
+          "US"
+        ],
+        [
+          2,
+          "BO",
+          "UNKNOWN"
+        ]
+      ],
+      "after_second_run": [
+        [
+          1,
+          "ANA",
+          "TH"
+        ],
+        [
+          99,
+          "KEEP",
+          "US"
+        ],
+        [
+          2,
+          "BO",
+          "UNKNOWN"
+        ]
+      ],
+      "pass": true,
+      "evaluator": "SQLite portable subset + Python load-strategy model",
+      "spark_executed": false,
+      "oracle_executed": false
+    },
+    {
+      "task": "T002",
+      "strategy": "overwrite",
+      "rows_selected": 2,
+      "selected_rows": [
+        [
+          "1",
+          "ANA"
+        ],
+        [
+          "2",
+          "BO"
+        ]
+      ],
+      "after_first_run": [
+        [
+          "1",
+          "ANA"
+        ],
+        [
+          "2",
+          "BO"
+        ]
+      ],
+      "after_second_run": [
+        [
+          "1",
+          "ANA"
+        ],
+        [
+          "2",
+          "BO"
+        ]
+      ],
+      "pass": true,
+      "evaluator": "SQLite portable subset + Python load-strategy model",
+      "spark_executed": false,
+      "oracle_executed": false
+    }
+  ],
+  "scope": "Curated synthetic expectations, not measured Blendata or Oracle outputs"
+}

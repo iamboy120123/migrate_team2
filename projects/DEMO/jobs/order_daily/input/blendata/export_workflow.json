@@ -1,0 +1,16 @@
+{
+  "workflow_name": "demo_order_daily",
+  "format": "normalized-synthetic-blendata-workflow",
+  "tasks": [
+    {
+      "task_id": "T003",
+      "task_name": "append_positive_orders",
+      "target_table": "ORDER_FACT",
+      "target_columns": ["ORDER_ID", "CUSTOMER_ID", "AMOUNT"],
+      "strategy": "append",
+      "merge_keys": [],
+      "business_rule": "Append positive-value orders only. A second run intentionally duplicates these fixture rows; this is not an idempotent load.",
+      "sql": "SELECT order_id AS ORDER_ID, customer_id AS CUSTOMER_ID, amount AS AMOUNT FROM raw_order WHERE amount > 0"
+    }
+  ]
+}

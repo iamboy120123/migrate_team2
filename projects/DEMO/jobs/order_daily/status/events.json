@@ -1,0 +1,9 @@
+[
+  {
+    "event": "SIMULATED_IMPORT_REHEARSAL",
+    "holder": "DEMO_BOB",
+    "at": "2026-11-01T06:41:42+00:00",
+    "actual_odi_import": false,
+    "note": "No connection or Smart Import was performed"
+  }
+]

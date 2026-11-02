@@ -1,0 +1,39 @@
+{
+  "mode": "simulation",
+  "state": "SIMULATION_PASSED",
+  "fingerprint": "fa233e5259693811bd61a909d923cd70b7217e7c2f1051ad22a947fde12cfb29",
+  "at": "2026-11-01T07:26:47+00:00",
+  "gates": {
+    "G0": "OFFLINE_FIXTURE_CHECK_PASS",
+    "G1": "OFFLINE_SUBSET_CHECK_PASS",
+    "G2": "SIMULATED_APPROVAL",
+    "G3": "SIMULATION_BUNDLE_CHECK_PASS",
+    "G4": "NOT_EXECUTED",
+    "G5": "NOT_EXECUTED",
+    "G6": "NOT_EXECUTED",
+    "G7": "NOT_EXECUTED"
+  },
+  "error": null,
+  "production_import_allowed": false,
+  "real_systems_executed": [],
+  "outputs": {
+    "output/sql/raw/T001.sql": "5a3d04d3b9f1f82825108fcb4e26e5b3e3aa03569a6d26bfdafb4e5a80f2a061",
+    "output/sql/converted/T001.sql": "1d7d72ec005f2a6dbfb168133454e4c2741f993159c46102b99313c3e26ab283",
+    "output/dml/T001_01.sql": "dbc5f6a93f900e1c8714d7ec65fa00a4ed33fdfab437cd806e2cd2ad452d2cd8",
+    "output/sql/raw/T002.sql": "fa310bdbe84b9088d8beff472a44b8ddcf912f008d5c75517551486ac9e89106",
+    "output/sql/converted/T002.sql": "bdbf5c2f5b81282523b95d0f2e750b2973578e330997910f4213c878c9c627e6",
+    "output/dml/T002_01.sql": "2bb46b16f99d240711481770ca2f45ca9dfee0b855f6fc4a83280b5c582798df",
+    "output/dml/T002_02.sql": "a6416d9ad4b566b16a35bb1d391799dd9c8258d73eb02f14d2a403d73e38106a",
+    "output/validation/fixture_comparison.json": "560972a44c30346c21150c16c3c5765615c54d144fb9e6ca9daa12d9a33593bf",
+    "output/validation/REPORT.md": "1d852c73323934380fbec2bf45eb2be64bd88887f812015ac37c09107c26756e",
+    "output/odi_export/package.simulation.xml": "18677a71d73065da4a9cb108a6496725006366b5e428ed11fa5a02a28b85f51a",
+    "output/odi_export/README.md": "5f18e534cb3e007bb34d97bf3557f2125c100e4532a32de6986f99fe010f7499",
+    "run_packs/rp01_validation/V1_counts.sql": "e1eddef6d4a9b793c13b6a4ee59cab92c679d21a09cea7583da8cdf3d730561a",
+    ".design/03_package_flow.md": "f307a08bfe8b1f1bca565227802bf26b872addbe1efcbd33006bea3575be460a",
+    "status/BUSINESS_RULES.md": "4005505859ef59072daa946ee79ceac00d753be404357feb766998484aefce4e",
+    "status/SQL_REVIEW.md": "428f4d22bd6257514a0287530e6937475068c5d1fc53944800066c82f42268de",
+    "output/odi_export/build-manifest.json": "1bd512795becc91ccbc4be138c03c3ef9acca315d05123c26133f5a573529a35",
+    "output/odi_export/PKG_CUSTOMER_DAILY.simulation.zip": "2dfe9b96363375ed286bc6d68e8670c45e6c56c39bafc66590cc00047b370140",
+    "status/GATES.md": "5c7f5594ec106a410a0614a39fb17056af4863b4861dfa6ed21a1f1506abcab3"
+  }
+}

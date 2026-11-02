@@ -1,0 +1,110 @@
+{
+  "scope": "local simulation CLI smoke checks",
+  "checks": [
+    {
+      "command": [
+        "status"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "import-lock",
+        "--job",
+        "DEMO/customer_daily",
+        "--holder",
+        "DEMO_ALICE",
+        "--simulation"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "import-lock",
+        "--job",
+        "DEMO/order_daily",
+        "--holder",
+        "DEMO_BOB",
+        "--simulation"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "pass": true
+    },
+    {
+      "command": [
+        "import-unlock",
+        "--job",
+        "DEMO/customer_daily",
+        "--holder",
+        "DEMO_ALICE",
+        "--simulation"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "import-lock",
+        "--job",
+        "DEMO/order_daily",
+        "--holder",
+        "DEMO_BOB",
+        "--simulation"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "import-unlock",
+        "--job",
+        "DEMO/order_daily",
+        "--holder",
+        "DEMO_BOB",
+        "--simulation"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "lock-status"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "check"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "report"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    },
+    {
+      "command": [
+        "demo"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "pass": true
+    }
+  ]
+}

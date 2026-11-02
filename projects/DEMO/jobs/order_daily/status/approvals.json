@@ -1,0 +1,13 @@
+{
+  "mode": "simulation",
+  "approvals": [
+    {
+      "gate": "G2",
+      "reviewer": "DEMO_SA",
+      "state": "SIMULATED_APPROVAL",
+      "fingerprint": "d479c3cea838ff2f38f4a04ebed11744fd729a547692a1fef713a30e7170942e",
+      "at": "2026-11-01T06:41:24+00:00",
+      "note": "Synthetic persona, not a real SA approval or deployment permission"
+    }
+  ]
+}

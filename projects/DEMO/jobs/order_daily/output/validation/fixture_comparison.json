@@ -1,0 +1,61 @@
+{
+  "mode": "simulation",
+  "checks": [
+    {
+      "task": "T003",
+      "strategy": "append",
+      "rows_selected": 2,
+      "selected_rows": [
+        [
+          1001,
+          1,
+          120
+        ],
+        [
+          1003,
+          1,
+          50
+        ]
+      ],
+      "after_first_run": [
+        [
+          1001,
+          1,
+          120
+        ],
+        [
+          1003,
+          1,
+          50
+        ]
+      ],
+      "after_second_run": [
+        [
+          1001,
+          1,
+          120
+        ],
+        [
+          1003,
+          1,
+          50
+        ],
+        [
+          1001,
+          1,
+          120
+        ],
+        [
+          1003,
+          1,
+          50
+        ]
+      ],
+      "pass": true,
+      "evaluator": "SQLite portable subset + Python load-strategy model",
+      "spark_executed": false,
+      "oracle_executed": false
+    }
+  ],
+  "scope": "Curated synthetic expectations, not measured Blendata or Oracle outputs"
+}

@@ -1,0 +1,28 @@
+{
+  "mode": "simulation",
+  "native_odi_smart_export": false,
+  "import_allowed": false,
+  "kit": {
+    "kit_version": "0.1.0",
+    "kit_sha256": "857d5c89baa0f5e40cb3054925353f35eb4678c4de32c90d4c55bea514b25050",
+    "target_snapshot": "sim-f6a37e9d5368227e",
+    "target_sha256": "f6a37e9d5368227e4521efe93320bf14e6479a2b3a1ff9bed4da7ba2753782ce"
+  },
+  "input_fingerprint": "d479c3cea838ff2f38f4a04ebed11744fd729a547692a1fef713a30e7170942e",
+  "tasks": [
+    "T003"
+  ],
+  "files": {
+    "output/sql/raw/T003.sql": "3b5a854f340f956168c4e374697172b9d41e10285243140fb1409e5f25fd0d02",
+    "output/sql/converted/T003.sql": "3b5a854f340f956168c4e374697172b9d41e10285243140fb1409e5f25fd0d02",
+    "output/dml/T003_01.sql": "5b3944f3d371daeffe94e7b0156753b93235fd75dd558340d43b570095e13d85",
+    "output/validation/fixture_comparison.json": "093a7a7a9d0492c7c74607969fb1ef65f0aacb909b01a1db58fcc8f308f1bf07",
+    "output/validation/REPORT.md": "9af2e5b0eadbbee43342d0f69897a7d91834329569e07d64eccb91ba1a41d07e",
+    "output/odi_export/package.simulation.xml": "ab6be265afbcc6a61aafb401b2503e5692f498a00c7b29c4c30839db2c43795e",
+    "output/odi_export/README.md": "5f18e534cb3e007bb34d97bf3557f2125c100e4532a32de6986f99fe010f7499",
+    "run_packs/rp01_validation/V1_counts.sql": "ace288af5b9e013b99957a3f82c572a650add6d9f504b1b3e4366ab508743ce3",
+    ".design/03_package_flow.md": "33422bb9894714707d905c069011f38fd167ed97ac6432bd932878d848e605df",
+    "status/BUSINESS_RULES.md": "8eff1f2da866d02012c084a6414cad97b584d264a7bcefd82b9ca115e004c698",
+    "status/SQL_REVIEW.md": "ecffd0ea9cce64e69bfdc56b16f955a9dc71b85e6b4cd2b5b668ff9bfb374694"
+  }
+}

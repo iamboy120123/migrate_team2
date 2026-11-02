@@ -1,0 +1,35 @@
+{
+  "mode": "simulation",
+  "state": "SIMULATION_PASSED",
+  "fingerprint": "d479c3cea838ff2f38f4a04ebed11744fd729a547692a1fef713a30e7170942e",
+  "at": "2026-11-01T06:46:07+00:00",
+  "gates": {
+    "G0": "OFFLINE_FIXTURE_CHECK_PASS",
+    "G1": "OFFLINE_SUBSET_CHECK_PASS",
+    "G2": "SIMULATED_APPROVAL",
+    "G3": "SIMULATION_BUNDLE_CHECK_PASS",
+    "G4": "NOT_EXECUTED",
+    "G5": "NOT_EXECUTED",
+    "G6": "NOT_EXECUTED",
+    "G7": "NOT_EXECUTED"
+  },
+  "error": null,
+  "production_import_allowed": false,
+  "real_systems_executed": [],
+  "outputs": {
+    "output/sql/raw/T003.sql": "3b5a854f340f956168c4e374697172b9d41e10285243140fb1409e5f25fd0d02",
+    "output/sql/converted/T003.sql": "3b5a854f340f956168c4e374697172b9d41e10285243140fb1409e5f25fd0d02",
+    "output/dml/T003_01.sql": "5b3944f3d371daeffe94e7b0156753b93235fd75dd558340d43b570095e13d85",
+    "output/validation/fixture_comparison.json": "093a7a7a9d0492c7c74607969fb1ef65f0aacb909b01a1db58fcc8f308f1bf07",
+    "output/validation/REPORT.md": "9af2e5b0eadbbee43342d0f69897a7d91834329569e07d64eccb91ba1a41d07e",
+    "output/odi_export/package.simulation.xml": "ab6be265afbcc6a61aafb401b2503e5692f498a00c7b29c4c30839db2c43795e",
+    "output/odi_export/README.md": "5f18e534cb3e007bb34d97bf3557f2125c100e4532a32de6986f99fe010f7499",
+    "run_packs/rp01_validation/V1_counts.sql": "ace288af5b9e013b99957a3f82c572a650add6d9f504b1b3e4366ab508743ce3",
+    ".design/03_package_flow.md": "33422bb9894714707d905c069011f38fd167ed97ac6432bd932878d848e605df",
+    "status/BUSINESS_RULES.md": "8eff1f2da866d02012c084a6414cad97b584d264a7bcefd82b9ca115e004c698",
+    "status/SQL_REVIEW.md": "ecffd0ea9cce64e69bfdc56b16f955a9dc71b85e6b4cd2b5b668ff9bfb374694",
+    "output/odi_export/build-manifest.json": "aeb8620521fcb488ea1069fedab94c38d2cc569c24db3c73c0cdc10851f39b7d",
+    "output/odi_export/PKG_ORDER_DAILY.simulation.zip": "ebeb17e9f0fe1a675f8ec5c770a40f6b2773cde3ebf21864e38d42296dae4bcb",
+    "status/GATES.md": "5c7f5594ec106a410a0614a39fb17056af4863b4861dfa6ed21a1f1506abcab3"
+  }
+}

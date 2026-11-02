@@ -1,0 +1,33 @@
+{
+  "scope": "Synthetic curated expectations. Neither measured Blendata output nor Oracle results.",
+  "sources": {
+    "RAW_CUSTOMER": {
+      "columns": ["CUSTOMER_ID", "NAME", "COUNTRY", "DELETED_FLAG"],
+      "rows": [[1, "Ana", "TH", 0], [2, "Bo", null, 0], [3, "Kai", "TH", 1]]
+    },
+    "RAW_ORDER": {
+      "columns": ["ORDER_ID", "CUSTOMER_ID", "AMOUNT"],
+      "rows": [[1001, 1, 120], [1002, 2, 0], [1003, 1, 50]]
+    }
+  },
+  "tasks": {
+    "T001": {
+      "initial_target": [[1, "OLD", "TH"], [99, "KEEP", "US"]],
+      "selected_rows": [[1, "ANA", "TH"], [2, "BO", "UNKNOWN"]],
+      "after_first_run": [[1, "ANA", "TH"], [99, "KEEP", "US"], [2, "BO", "UNKNOWN"]],
+      "after_second_run": [[1, "ANA", "TH"], [99, "KEEP", "US"], [2, "BO", "UNKNOWN"]]
+    },
+    "T002": {
+      "initial_target": [["old", "OLD"]],
+      "selected_rows": [["1", "ANA"], ["2", "BO"]],
+      "after_first_run": [["1", "ANA"], ["2", "BO"]],
+      "after_second_run": [["1", "ANA"], ["2", "BO"]]
+    },
+    "T003": {
+      "initial_target": [],
+      "selected_rows": [[1001, 1, 120], [1003, 1, 50]],
+      "after_first_run": [[1001, 1, 120], [1003, 1, 50]],
+      "after_second_run": [[1001, 1, 120], [1003, 1, 50], [1001, 1, 120], [1003, 1, 50]]
+    }
+  }
+}

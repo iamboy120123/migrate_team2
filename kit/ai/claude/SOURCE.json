@@ -1,0 +1,564 @@
+{
+  "ported_for_kit": "0.3.0",
+  "sources": {
+    "claude": "Migrate_ODI_Team2/projects/SS_ESIM/jobs/ss_esim_landing_to_discovery/.claude (2.15.0 + job patches; W-12 baseline provenance)",
+    "knowledge": "Migrate_ODI_Team2/kit/knowledge (2.15.0) + SS_ESIM knowledge/WORKFLOW.md, lessons-learned.md, reference/claude-system.md"
+  },
+  "skipped": {
+    ".claude/settings.json": "hooks need scripts/hooks (G-27, later kit)",
+    ".claude/settings.local.json": "per-user"
+  },
+  "files": [
+    {
+      "path": "ai/claude/agents/conversion-auditor.md",
+      "source_sha256": "862a614575ade165d97e08045f79a980b9a76b344b7e5e5b6e2264fce94927b7",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/convert_sql.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/agents/cutover-planner.md",
+      "source_sha256": "f45dff9473f629488cdcacd4f59caeb852bd2efa0b8b44e081b42f7c1cb59c26",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/checks/verify_all.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/agents/ddl-dba-reviewer.md",
+      "source_sha256": "a5db9c8e0d666447deb15bd879dedcf9c6b8b3af310036bc4f10ef344bf9f30c",
+      "unavailable": [
+        "scripts/checks/verify_all.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/agents/run-result-analyst.md",
+      "source_sha256": "1f5347b7811e5550512b614f777dd9355e621e93a70cfab3f612f1fdc0cb7f89",
+      "unavailable": [
+        "scripts/runpack/read_run_results.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/agents/semantic-verifier.md",
+      "source_sha256": "413edb1f70a298d2b9cdb36335867bbb1a42d533c7b43cb499e2ea4f3886e60a",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/agents/spec-writer.md",
+      "source_sha256": "6d2cd5307968937fcf920ebc102eff0c24ed7e7ca82ff338e1e672429af085a4",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/agents/sql-reviewer.md",
+      "source_sha256": "672394dd99fdb8910d1fba4bf920cf4a1b3ab533084da2458d63fce1492a8aaa",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/agents/state-auditor.md",
+      "source_sha256": "0f0943046e06f0b6597ba4df10c88357df9718dd49f68d4ac9cd05fa63a65550",
+      "unavailable": [
+        "scripts/checks/verify_all.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/agents/test-designer.md",
+      "source_sha256": "6e04df320017bb76101840d284c808cbdbae346cc72662c8980d0c2ab00194e9",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/agents/xml-auditor.md",
+      "source_sha256": "f9345ed7fef886358bde8453a06ac237ef1152747b1a1e4595ab7bceb1b124ee",
+      "unavailable": [
+        "scripts/checks/verify_all.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/adr.md",
+      "source_sha256": "6534c33e9d74c7f095733c7412671cbafc62772202d5f78d40dfd22a7c558c62",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/commands/approve.md",
+      "source_sha256": "06dfbd7c43b59e08693a1b0ca231b3ff4f9264fcad81f10d856dba455ed46a27",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/commands/br-catalog.md",
+      "source_sha256": "47df4309ce27a6d894261c6a6bf269b252305ed2fe9b46c492cfb46d3dca075f",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/commands/compare-d2.md",
+      "source_sha256": "9dbe61ca800601ebd1cf44b9d6c44a32f8a071317ab9224285361e886975a536",
+      "unavailable": [
+        "scripts/testing/compare_results.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/convert.md",
+      "source_sha256": "54ecd54ba891f542c068a68e00f4f935281cf4ffe1b4237357f6b983c02a5c24",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/convert_sql.py",
+        "scripts/pipeline/extract_workflow.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/cutover.md",
+      "source_sha256": "a1ccfe9d23ac6875372e271fc8491c81e7871a570bb7782fcaacfa471bc5c685",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/gen_backfill.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/decide.md",
+      "source_sha256": "2367918ec40969915f42fd896747cfc1a551d773272f8d2588d363a64147a03e",
+      "unavailable": [
+        "scripts/ws/job_status.py",
+        "workspace.py new-round"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/design.md",
+      "source_sha256": "71d9123682e6f7d99f7fbc4cd3a4ba5af8a270441e6a1179d771fada90c4f722",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/gen_design_docs.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/diagnose.md",
+      "source_sha256": "82ceec97c3b6d8196dc9d2da109aee570717cc99a237c2456e1dcd9fea7f80a9",
+      "unavailable": [
+        "scripts/runpack/read_run_results.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/gap-analysis.md",
+      "source_sha256": "55281b5662066e981a96061c306feee14a767721d59e327dd5669cb6641ac12f",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/commands/gate.md",
+      "source_sha256": "636951b846903f9dbf581ef41d2bec4a5c7a27c602b02f8ba753bc75b7389a24",
+      "unavailable": [
+        "scripts/checks/check_gate.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/gen-ddl.md",
+      "source_sha256": "6a1045be70105e7ba27c1721343f46660f524347ce1e7a8475ac41f2474b8ee8",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/gen_dba_prereq.py",
+        "scripts/pipeline/gen_ddl.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/gen-export.md",
+      "source_sha256": "436176d221973dbc2117f997c00bedb2dfadd8cd9c6cae58665f290276461613",
+      "unavailable": [
+        "scripts/checks/check_inputs.py",
+        "scripts/pipeline/build_odi_export.py",
+        "scripts/pipeline/gen_design_docs.py",
+        "scripts/pipeline/gen_dml.py",
+        "scripts/pipeline/validate_odi_xml.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/handoff.md",
+      "source_sha256": "eab1ac15d3fb65f0dad459c08e87bf2502924d5220f5e280ec0ba781a4a527a4",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/checks/verify_all.py",
+        "scripts/ws/job_status.py",
+        "workspace.py handoff"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/inputs.md",
+      "source_sha256": "7818ebcacdd4cbbc08ad957582d3369b5aacd81d940c42e7af444c291613119b",
+      "unavailable": [
+        "scripts/checks/check_inputs.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/intake.md",
+      "source_sha256": "9ca6f16687cdcee3a5aa76072d1b3942f1380bce6ed7195aed3c933ac92bfeec",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/commands/kit-backport.md",
+      "source_sha256": "b98e75ffb26ef58224d96c5d95ffe035d8628bdfa6929858a92459aaa7a3e1ea",
+      "unavailable": [],
+      "adapted": true,
+      "note": "kit 0.4.0: rewritten for migrate_team2 kit-promote (lessons → shared/knowledge, approved); K# → kit maintainer"
+    },
+    {
+      "path": "ai/claude/commands/lesson.md",
+      "source_sha256": "2b5f5d02c722ebb5d8bc50c77ae4589fa740724639bc7b4355fa81c278b8f52c",
+      "unavailable": [],
+      "adapted": true,
+      "note": "kit 0.4.0: root wiki commands"
+    },
+    {
+      "path": "ai/claude/commands/next-step.md",
+      "source_sha256": "a957902048738b70251c74015009ec51c8f131f8939e8dfada363180f403dbdf",
+      "unavailable": [
+        "scripts/runpack/read_run_results.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true,
+      "note": "kit 0.4.0: step 0 uses root wiki-step"
+    },
+    {
+      "path": "ai/claude/commands/preflight.md",
+      "source_sha256": "0914efe56b25d6ed570694483fee1b0613af0246ee281e487e27a10973cf08be",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/runpack/gen_preflight_pack.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/read-results.md",
+      "source_sha256": "d7c8a4e49a2b7b03c47e50155348258599fae44ddb6db4b4737e4cdced826b0d",
+      "unavailable": [
+        "scripts/runpack/read_run_results.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/review-report.md",
+      "source_sha256": "2dfaa404c1fc832f1fc40daa54f4bb20e4540aea4c4030182ee9ce45e66ac8a6",
+      "unavailable": [
+        "scripts/checks/review_report.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/review-sql.md",
+      "source_sha256": "d11a62a78e853341beb42845cf3c25625ad944367b273fb03cbb346d47c3d5e2",
+      "unavailable": [
+        "scripts/checks/check_gate.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/run-pack.md",
+      "source_sha256": "ac481551d1df9f44715a3257ec141a9547825a84042919b748f3867a56bdf2ac",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/checks/verify_all.py",
+        "scripts/runpack/gen_run_pack.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/sql-check.md",
+      "source_sha256": "6d14a0039ca05b28ec013f4e337edf5d22d54bbc0abd62912544c2af7b99784b",
+      "unavailable": [
+        "scripts/checks/check_sql.py",
+        "scripts/checks/extract_partitions.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/status.md",
+      "source_sha256": "82ddb7038c7131cf360c7740bde67977cce5d007771667c93de6d82e7ee3796e",
+      "unavailable": [
+        "scripts/ws/job_status.py",
+        "status --no-fetch"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/sync-guid.md",
+      "source_sha256": "7b4cea2a34014cb64f4ee8fc0a8a4b82b335ee2b9896bd8278d9a16a32360d61",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/pipeline/sync_guid_from_export.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/update-status.md",
+      "source_sha256": "2e77ca36d9b34e87264a8d260a4ea1207bcdf1145824746cb0f32262eac47d40",
+      "unavailable": [
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/validation.md",
+      "source_sha256": "8842f9e90526c4968af9329707082cfed2e6c78ebbed23245e66a28f1023f564",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/runpack/gen_validation.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/verify.md",
+      "source_sha256": "3196738fe6d7d5ca6eaebe5d16c9dc6e154d58c75c099ba347c7ac6d46b3896f",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/runpack/read_run_results.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/commands/wiki.md",
+      "source_sha256": "c0ec80ccde96b41cc8aedc2a597e57bc3ffc57c4a2b0326619193f1e2e6ceaed",
+      "unavailable": [],
+      "adapted": true,
+      "note": "kit 0.4.0: runs root wiki-step / wiki-search / wiki-check (all job modes)"
+    },
+    {
+      "path": "ai/claude/rules/ask-with-recommendation.md",
+      "source_sha256": "6783b456cec958528509b843a76810187ef525b151e79aef649043cad1f4d729",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/rules/odi-import.md",
+      "source_sha256": "9786b5e9a782b05244e2c330f1bef2b943c0365d41b617194469e13577c23ddb",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/rules/odi-step-sql.md",
+      "source_sha256": "780cca809c9ffbbf2fcb1ea94811cd9678a5fed6c97b1841c816dad83b46f54f",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/rules/one-at-a-time.md",
+      "source_sha256": "50138b1bcb5735f1617e246ba4191c9fab83f03741506d3fa9b1ef2b9ffbc7a8",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/rules/pre-delivery-gate.md",
+      "source_sha256": "811b6b35b80eadbf896938670e557eb500b5fe22a507b99ca928193a3975ae22",
+      "unavailable": [
+        "scripts/checks/pre_delivery_gate.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/rules/read-before-ask.md",
+      "source_sha256": "ba0044341ba01a6a751af02afee3bc06151f28ab3988d2338b054ee12155070a",
+      "unavailable": [
+        "scripts/pipeline/read_smart_export.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/rules/run-pack.md",
+      "source_sha256": "97092a96523b4d98159954ce6a5ec171190486c478e9419e0020760e693b9c33",
+      "unavailable": [
+        "scripts/runpack/gen_preflight_pack.py",
+        "scripts/runpack/gen_run_pack.py",
+        "scripts/runpack/read_run_results.py",
+        "scripts/ws/job_status.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/rules/state-files.md",
+      "source_sha256": "1bc6adc9102b2f5759f2084af1c3f674259157004039e477dcbe95b22c764953",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "ai/claude/skills/odi-smart-export/SKILL.md",
+      "source_sha256": "00a4cb569db631bcf6ca1c52c0df8f56fa3e1500118eaea4514e09259041948a",
+      "unavailable": [
+        "scripts/checks/verify_all.py",
+        "scripts/pipeline/gen_design_docs.py",
+        "scripts/pipeline/validate_odi_xml.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/skills/spark-oracle-dialect/SKILL.md",
+      "source_sha256": "13713cf77d02d7702069666658fbbd9601db3bfd292bb18714cd78ec897d0584",
+      "unavailable": [
+        "scripts/checks/check_sql.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "ai/claude/workflows/phase4-review.js",
+      "source_sha256": "81ad187bc43cfd7a419b4bb7b315dc1b83e6a712d438cdd83919d57b10dfb320",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/blendata-json-schema.md",
+      "source_sha256": "b7d97a7b866887f9b7bf8a27c78df2311e4e8e3ea1089e4b6ab8191c3397b7a0",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/deliverables.md",
+      "source_sha256": "30276bfaa1538c992749848dd7df75b568c506d8c541dc2ffbd0df49ea4e2744",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/delivery-checklist.md",
+      "source_sha256": "fcd77729771b31121fabb361ba79b12b0ce5c6c41371767afe8f4584d16ad3c8",
+      "unavailable": [
+        "scripts/checks/check_sql.py",
+        "scripts/checks/extract_partitions.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/grading-rules.md",
+      "source_sha256": "acc2f9da235a54562a38a920330e5540e7f18b7532800bba5df54d9f55e2d210",
+      "unavailable": [
+        "scripts/checks/grade.py",
+        "scripts/testing/perf_summary.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/intake-questions.md",
+      "source_sha256": "ade46dcd005e212dc9c0b911a1f0e770a6fef81f38c6ba46c53cfd45d4c9b49c",
+      "unavailable": [
+        "scripts/checks/check_sql.py",
+        "scripts/checks/extract_partitions.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/migration-rules.md",
+      "source_sha256": "c1048f7ac55b177d007a2b6c60a68f8eec59a7c897ba269f0cf9139c664a89ba",
+      "unavailable": [
+        "scripts/checks/check_sql.py",
+        "scripts/odi_builder/build_from_spec.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/odi-object-reference.md",
+      "source_sha256": "87748103843a7a06c9fb1e6e3306b5af2e64403b99a7a927255cfabc459b13ff",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/optional/manual-build-procedure.md",
+      "source_sha256": "18038fd56a43a399f94681deafbe635a9fdaf681a6b12c7def3e7d64ed5a50a0",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/optional/mapping-based-path.md",
+      "source_sha256": "70f0f993aa2c25d6c213b86b6c19a0e6dd71f0fb43efd8851394b3737e4fc3b1",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/oracle-checks-and-spark-config.md",
+      "source_sha256": "a8e3d37d5c1a21009d9267ba7dddf5af126f110fdb9c2007b652079384859fad",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/spark-to-oracle-sql.md",
+      "source_sha256": "81ac0b2c7d2de6c917944cf6f240f23f84c70a7c95a344c255fff6068ec5cf43",
+      "unavailable": [
+        "scripts/checks/check_sql.py",
+        "scripts/checks/extract_partitions.py",
+        "scripts/odi_builder/build_from_spec.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/test-method.md",
+      "source_sha256": "6fd5f181e913af307bc2b7d0258fab214b051a35029a045004c81deaa0467362",
+      "unavailable": [
+        "scripts/testing/",
+        "scripts/testing/compare_tables.py",
+        "scripts/testing/make_mock_sql.py",
+        "scripts/testing/spark_reference_run.py"
+      ],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/reference/validation-and-cutover.md",
+      "source_sha256": "3de52e4b0388a7d3a4e5560015701fdf998bd958ebff5a3cbd046c6a1d6b8a87",
+      "unavailable": [],
+      "adapted": false
+    },
+    {
+      "path": "knowledge/glossary-kit.md",
+      "source_sha256": "06e56e1e5b49f6a90028c25e67ea7ad34adafeac55aa39e8b43a82ce18ccde0c",
+      "unavailable": [],
+      "adapted": true
+    },
+    {
+      "path": "knowledge/WORKFLOW.md",
+      "source_sha256": "5feb82f058f00aa3cae51e9b27d4a46e54227485bfc26ca5c87648751817763b",
+      "unavailable": [
+        "scripts/checks/check_sql.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "knowledge/lessons-learned.md",
+      "source_sha256": "82f2e92b2d2447fcef7620c6631e45131354424822827d79aba3efdfa37909e4",
+      "unavailable": [
+        "scripts/checks/check_gate.py"
+      ],
+      "adapted": true
+    },
+    {
+      "path": "knowledge/reference/claude-system.md",
+      "source_sha256": "9de5ba28493c013c114056a44e6cfee4dd451036a46a7d3f779bb01bd6d1affd",
+      "unavailable": [
+        "scripts/checks/check_gate.py",
+        "scripts/checks/verify_all.py",
+        "scripts/hooks/"
+      ],
+      "adapted": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "workflow_name": "demo_customer_daily",
+  "format": "normalized-synthetic-blendata-workflow",
+  "tasks": [
+    {
+      "task_id": "T001",
+      "task_name": "upsert_customer_dimension",
+      "target_table": "CUSTOMER_DIM",
+      "target_columns": ["CUSTOMER_ID", "NAME_UPPER", "COUNTRY"],
+      "strategy": "upsert",
+      "merge_keys": ["CUSTOMER_ID"],
+      "business_rule": "Exclude deleted customers, uppercase names, and replace NULL country with UNKNOWN; update by customer ID.",
+      "sql": "SELECT `customer_id` AS CUSTOMER_ID, upper(name) AS NAME_UPPER, ifnull(country, 'UNKNOWN') AS COUNTRY FROM raw_customer WHERE deleted_flag = 0"
+    },
+    {
+      "task_id": "T002",
+      "task_name": "overwrite_active_customer_snapshot",
+      "target_table": "ACTIVE_CUSTOMER",
+      "target_columns": ["CUSTOMER_ID_TEXT", "NAME_UPPER"],
+      "strategy": "overwrite",
+      "overwrite_decision": "truncate_all",
+      "decision_source": "SYNTHETIC_DEMO_DECISION_ONLY",
+      "partitions": [],
+      "business_rule": "Replace the complete synthetic active-customer snapshot; explicit full-table overwrite decision, no partitions.",
+      "sql": "SELECT CAST(customer_id AS STRING) AS CUSTOMER_ID_TEXT, upper(name) AS NAME_UPPER FROM raw_customer WHERE deleted_flag = 0"
+    }
+  ]
+}

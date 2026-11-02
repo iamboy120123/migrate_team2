@@ -1,0 +1,21 @@
+name: simulation-check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Kit and workflow tests
+        run: python -B -m unittest discover -s tests -v
+      - name: Restore pinned local kit from matching source
+        run: python -B tools/workspace.py freeze-kit
+      - name: Verify committed simulation evidence
+        run: python -B tools/workspace.py check

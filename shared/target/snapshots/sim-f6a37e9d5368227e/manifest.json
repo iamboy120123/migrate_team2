@@ -1,0 +1,12 @@
+{
+  "id": "sim-f6a37e9d5368227e",
+  "kind": "synthetic-target",
+  "files": {
+    "columns/all_tab_columns.csv": "fae41cd70f65085c6ae3efd7f9c9096ba66fce5161a4a13d66df8ea941107e36",
+    "fixtures/rows.json": "93f20f4a1263864b8d6a1e52b95a49c14137cb4421f803b64b9e7e24725cb3a7",
+    "ODI_REFERENCE.simulation.json": "bafe98ec04f794f32168e4b3511d595682f821bf03fc2bfb34693f73554658a4",
+    "SOURCE.md": "2393b8e3582e4eae55c34d1e745706301dade133a958e69541ea9f5b6107c8be"
+  },
+  "sha256": "f6a37e9d5368227e4521efe93320bf14e6479a2b3a1ff9bed4da7ba2753782ce",
+  "production_verified": false
+}

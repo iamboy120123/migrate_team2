@@ -1,0 +1,8 @@
+{
+  "mode": "simulation",
+  "package_name": "PKG_CUSTOMER_DAILY",
+  "schema_mode": "simulation_unqualified",
+  "db_mode": "human",
+  "github_mode": "manual",
+  "fixture": "fixtures/rows.json"
+}

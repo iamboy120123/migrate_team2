@@ -1,0 +1,6 @@
+interface:
+  display_name: "Blendata to ODI Team"
+  short_description: "Set up and rehearse team migration workspaces"
+  default_prompt: "ใช้ $blendata-odi-team ช่วยตั้ง workspace และ Project/Job โดยตรวจรุ่นเครื่องมือ ข้อมูลอ้างอิง และหลักฐานตามขั้นตอนของทีม"
+policy:
+  allow_implicit_invocation: true

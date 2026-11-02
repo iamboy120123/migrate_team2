@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "sha256": "857d5c89baa0f5e40cb3054925353f35eb4678c4de32c90d4c55bea514b25050",
+  "artifact": ".cache/kit/0.1.0/migrate_kit-857d5c89baa0f5e40cb3054925353f35eb4678c4de32c90d4c55bea514b25050.zip",
+  "kind": "simulation-kit",
+  "files": {
+    "migrate_kit/__init__.py": "7a6b36d9954e3ab3f0d653b08fc3908ac878ceeba18b1d97fcb3e1e5c11a276f",
+    "migrate_kit/cli.py": "7111b4d99cca69a35ce8dc3caaeee730225022096a3480e915c73a1cbd5bd7c5",
+    "migrate_kit/engine.py": "c387b5b7e8f3b7ae34c576483cb41724722194df91144768fe1eb2b5106102bd",
+    "migrate_kit/runtime.py": "6bd2112449d2177764843461c5523190a98097bb1ce4e7e7fb6e5e45d3a1741f",
+    "migrate_kit/storage.py": "c9356bd85f996be501c1f3aa9ec0323920ea694e99721e234c41970aebfe93c5",
+    "migrate_kit/workspace.py": "5865a26cf912a880e2ffb98697c620eb6d86135ec5cc60c00c062824aa32f5b8",
+    "migrate_kit/resources/templates/status/CUTOVER_RUNBOOK.md": "bf236e16430aea64d19626e074bd6927c70a38d43c693ec0589aadd08bd9d0a2",
+    "migrate_kit/resources/templates/status/INTAKE.md": "10e25763a84a5043ab4662dbf8c4ef05fb8c98fea48bb28f724a0de3c0e33d28",
+    "migrate_kit/resources/templates/status/OPEN_DECISIONS.md": "4d12197070e3a5a0230a09927500bf4c01ed5ccab64c5dbd2a555b4ebec71aec",
+    "migrate_kit/resources/ai/README.md": "b746fdc26ae1a1762f4dad3b122b8122fdcbbf9340658f8d726418a6e701827c",
+    "migrate_kit/resources/knowledge/reference/SIMULATION_SCOPE.md": "f28f01b63feb002255d672a9e4db0c4b7b6e19e2867c706989caf23cb3a8523b"
+  }
+}

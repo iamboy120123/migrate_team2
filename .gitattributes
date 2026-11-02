@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.sql -text
+*.csv -text
+*.xml -text
+*.zip binary
+*.cmd text eol=crlf
+*.js text eol=lf
+kit/ai/** text eol=lf
+kit/knowledge/** text eol=lf
+kit/templates/** text eol=lf
+kit/releases/*.zip binary
+kit/delivery/** text eol=lf
